@@ -64,3 +64,5 @@ function cleanHtml() {
   countryList.innerHTML = '';
   countryInfo.innerHTML = '';
 }
+
+// test
