@@ -4,14 +4,9 @@ export const fetchCountries = name => {
   )
     .then(resp => {
       if (!resp.ok) {
-        if (resp.status === 404) {
-          return [];
-        }
         throw new Error(resp.statusText);
       }
       return resp.json();
     })
-    .catch(error => {
-      console.error(error);
-    });
+    
 };
